@@ -20,3 +20,27 @@
 .App-link {
   color: #09d3ac;
 }
+
+.Rectangle {
+  width: 220px;
+  height: 44px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  position: absolute;
+  top: 30px;
+  left: 99px;
+}
+
+.icons {
+  display: flex;
+  justifyContent:'center'
+}
+
+.icon{
+  /*padding-top: 0.5rem;*/
+  /*padding-bottom: 0.5rem;*/
+  /*padding-left: 1rem;*/
+  /*padding-right: 20px;*/
+  margin-left: 20px;
+}

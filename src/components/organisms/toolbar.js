@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../App.css';
-import IconContainer from "./molecules/IconContainer";
+import IconContainer from "../molecules/IconContainer";
 
-function toolbar(){
+// const IconContainer = ({ type, onIconClick }) => {
+const toolbar = ({ type, onIconClick }) => {
     return (
         <div>
           <div className="Rectangle">
@@ -11,6 +12,5 @@ function toolbar(){
         </div>
     );
 }
-
 
 export default toolbar;

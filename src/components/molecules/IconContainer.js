@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import { Button} from 'react-bootstrap';
 import '../../App.css';
-import Icon from './atoms/icon';
+import Icon from '../atoms/icon';
 
-class IconContainer extends Component {
-    render() {
-        return(
-            <div className="icons">
-                <Icon type='MINUS'/>
-                <Icon type='PLUS'/>
-                <Icon type='VIDEO'/>
-                <Icon type='SMILE'/>
-            </div>
-        )
-    }
+const IconContainer = ({ type, onIconClick, callbackFromParent }) => {
+
+    const onIconClicked = (type, e) => {
+        console.log(type);
+        //this.props.callbackFromParent(type);
+    };
+
+    return(
+        <div className="icons">
+            <Icon type='PENCIL' onIconClick={onIconClicked} />
+            <Icon type='CIRCLE'  onIconClick={onIconClicked} />
+            <Icon type='POSTIT' onIconClick={onIconClicked} />
+            <Icon type='TEXT' onIconClick={onIconClicked} />
+            <Icon type='IMAGE' onIconClick={onIconClicked} />
+        </div>
+    )
 }
 
 export default IconContainer;
+
+

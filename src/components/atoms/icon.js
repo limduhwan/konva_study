@@ -1,51 +1,39 @@
 import React from "react";
 import '../../App.css';
-// import { css } from 'emotion';
 
-// import ArrowRight from "./arrow-right2.svg";
-// import ArrowLeft from "./arrow-left2.svg";
-import minus from '../images/ minus.svg';
-import plus from '../images/ plus.svg';
-import smile from '../images/ smiled.svg';
-import video from '../images/video.svg';
+import minus from '../../images/ minus.svg';
+import plus from '../../images/ plus.svg';
+import smile from '../../images/ smiled.svg';
+import video from '../../images/video.svg';
 
-
-
-export const iconTypes = {
-    arrowRight: 'ARROW_RIGHT',
-    arrowLeft: 'ARROW_LEFT',
-}
-
-// const iconSrc = {
-//     ARROW_RIGHT: ArrowRight,
-//     ARROW_LEFT: ArrowLeft,
-// }
+import pencil from '../../images/pencil.png';
+import circle from '../../images/circle.png';
+import postit from '../../images/postit.png';
+import text from '../../images/text.png';
+import image from '../../images/image.png';
 
 const iconSrc = {
     MINUS: minus,
     PLUS: plus,
     SMILE: smile,
-    VIDEO: video
+    VIDEO: video,
+    PENCIL: pencil,
+    CIRCLE: circle,
+    POSTIT: postit,
+    TEXT: text,
+    IMAGE: image
 }
 
-// const circleStyles = css({
-//     width: 24,
-//     height: 24,
-//     borderRadius: "50%",
-//     backgroundColor: "#f7f7f9",
-//     display: "flex",
-//     justifyContent: "center"
-// });
-
-// export default function Icon({ type }) {
-export default function Icon({type}){
-
+const Icon = ({ type, onIconClick }) => {
 
     return (
-        /*<div className={circleStyles}>*/
-        <div onClick={()=> alert(type)}>
-            {/*<img src={require('../images/ minus.svg')}/>*/}
+        <div onClick={ (e) => onIconClick(type, e)}>
             <img src={iconSrc[type]} className='icon' />
         </div>
     )
 };
+
+export default Icon;
+
+
+// onClick={ (e) => this.someFn('id', e)}>
