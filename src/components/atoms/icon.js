@@ -6,22 +6,22 @@ import plus from '../../images/ plus.svg';
 import smile from '../../images/ smiled.svg';
 import video from '../../images/video.svg';
 
-import pencil from '../../images/pencil.png';
-import circle from '../../images/circle.png';
-import postit from '../../images/postit.png';
-import text from '../../images/text.png';
-import image from '../../images/image.png';
+// import pencil from '../../images/pencil.png';
+// import circle from '../../images/circle.png';
+// import postit from '../../images/postit.png';
+// import text from '../../images/text.png';
+// import image from '../../images/image.png';
 
 const iconSrc = {
-    MINUS: minus,
-    PLUS: plus,
-    SMILE: smile,
-    VIDEO: video,
-    PENCIL: pencil,
-    CIRCLE: circle,
-    POSTIT: postit,
-    TEXT: text,
-    IMAGE: image
+    // MINUS: minus,
+    // PLUS: plus,
+    // SMILE: smile,
+    // VIDEO: video,
+    // PENCIL: pencil,
+    // // CIRCLE: circle,
+    // POSTIT: postit,
+    // TEXT: text,
+    // IMAGE: image
 }
 
 const Icon = ({ type, onIconClick }) => {

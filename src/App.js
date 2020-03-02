@@ -7,8 +7,10 @@ import Toolbar from './components/organisms/toolbar';
 import IconContainer from './components/molecules/IconContainer';
 import Icon from './components/atoms/icon';
 // import redCircle from './components/redCircle';
-import FloatingComponent from './components/floatingcomponents';
-import ToDoList from './components/molecules/test_todolist';
+// import FloatingComponent from './components/floatingcomponents';
+// import ToDoList from './components/molecules/test_todolis';
+import TransformerApp from './transformer/transformerApp';
+import TransformerNode from './transformer/transformer_self';
 
 class App extends Component {
 
@@ -18,8 +20,10 @@ class App extends Component {
               {/*<Icon type='MINUS'/>*/}
               {/*<IconContainer/>*/}
               {/*<Stars></Stars>*/}
-              <Toolbar/>
+              {/*<Toolbar/>*/}
               {/*<FloatingComponent/>*/}
+              {/*<TransformerApp/>*/}
+              <TransformerNode/>
           </div>
         );
     }
